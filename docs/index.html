@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 　　<!-- vue.js　-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <script defer src="/firebase.js"></script>
     <link rel="manifest" href="manifest.json">
     <title>PWA Sample</title>
   </head>
@@ -39,12 +35,5 @@
       }
     });
     </script>
-    <div id="notification">
-        <h3>NOTIFICATION</h3>
-        <p>当サイトの更新をプッシュ通知で受け取ることができます。</p>
-        <p class="notice"></p>
-        <button id="EntryButton" onclick="getSubscription()">プッシュ通知を受け取る</button>
-        <button id="RemoveButton" onclick="removeSubscription()">プッシュ通知を解除する</button>
-    </div>
   </body>
 </html>
