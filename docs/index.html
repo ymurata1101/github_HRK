@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+　　<!-- vue.js　-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script defer src="/firebase.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <title>PWA Sample</title>
+  </head>
+  <body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+     </div>
+    <script>
+    <!-- service workerの登録関係 -->
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service_worker.js').then(function(registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+        console.log('ServiceWorker registration failed: ', err);
+    });
+    }
+    <!-- vue.jsの設定関係 -->
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Welcome to Hirokei!'
+      },
+      methods: {
+        reverseMessage: function () {
+          this.message = this.message.split('').reverse().join('')
+        }
+      }
+    });
+    </script>
+    <div id="notification">
+        <h3>NOTIFICATION</h3>
+        <p>当サイトの更新をプッシュ通知で受け取ることができます。</p>
+        <p class="notice"></p>
+        <button id="EntryButton" onclick="getSubscription()">プッシュ通知を受け取る</button>
+        <button id="RemoveButton" onclick="removeSubscription()">プッシュ通知を解除する</button>
+    </div>
+  </body>
+</html>
