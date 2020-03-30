@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
  
 // FCM使用準備
 const messaging = firebase.messaging();
-messaging.usePublicVapidKey('XXXXXXXXXXXXXXXXXXXXXXXXXX');// VAPIDを設定
+messaging.usePublicVapidKey('BAs6YNtBsRnqf1vj1THto3nthejprpfWsEeHt7x6COEhgVdOQEgGG0avuLmdbWgSw3U_ahujAeb-gm7xNhFkroI');// VAPIDを設定
  
 // Firestore使用準備
 var db = firebase.firestore();
