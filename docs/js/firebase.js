@@ -21,6 +21,9 @@ var usersRef = db.collection("users");
 
 // 購読確認を行う
 checkSubscription();
+
+//トークンを表示する
+displayToken();
  
 // 購読確認処理
 function checkSubscription() {
