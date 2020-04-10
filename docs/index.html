@@ -4,11 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 　　<!-- vue.js　-->
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/serviceworker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+      });
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <script defer src="/firebase.js"></script>
+    <script defer src="js/firebase.js"></script>
     <link rel="manifest" href="manifest.json">
     <title>PWA Sample</title>
   </head>
