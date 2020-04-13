@@ -1,3 +1,4 @@
+//PWAでプッシュ通知を実装してみる（３）より
 // Firebase設定
 var firebaseConfig = {
   apiKey: "AIzaSyCsOmhrGdsEa0cb7R5bikmVkqhShVIRrqQ",

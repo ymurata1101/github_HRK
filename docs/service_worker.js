@@ -1,3 +1,4 @@
+// PWAでプッシュ通知を実装してみる（２）ST
 const VERSION = "1";
 const ORIGIN = location.protocol + '//' + location.hostname;
  
@@ -83,3 +84,4 @@ self.addEventListener('fetch', event => {
         })
     );
 });
+// PWAでプッシュ通知を実装してみる（２）EN
