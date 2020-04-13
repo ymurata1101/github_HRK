@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 　　<!-- vue.js　-->
-<!-- PWAでプッシュ通知を実装してみる（２）ST -->
+<!-- PWAでプッシュ通知を実装してみる２ ST -->
     <script>
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#6a5f80"/>
@@ -21,8 +21,8 @@
       });
     }
     </script>
-<!-- PWAでプッシュ通知を実装してみる（２）EN -->
-<!-- PWAでプッシュ通知を実装してみる（３）ST -->
+<!-- PWAでプッシュ通知を実装してみる２ EN -->
+<!-- PWAでプッシュ通知を実装してみる３ ST -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
@@ -31,7 +31,7 @@
     <script defer src="/firebase.js"></script>
     <script defer src="firebase.js"></script>
     <script defer src="images/icon-192.png"></script>
-<!-- PWAでプッシュ通知を実装してみる（３）EN -->
+<!-- PWAでプッシュ通知を実装してみる３ EN -->
 
   <title>PWA Sample</title>
   </head>
@@ -40,7 +40,7 @@
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
-<!-- PWAでプッシュ通知を実装してみる（３）ST -->
+<!-- PWAでプッシュ通知を実装してみる３ ST -->
     <div id="notification">
         <h3>NOTIFICATION</h3>
         <p>当サイトの更新をプッシュ通知で受け取ることができます。</p>
@@ -48,7 +48,7 @@
         <button id="EntryButton" onclick="getSubscription()">プッシュ通知を受け取る</button>
         <button id="RemoveButton" onclick="removeSubscription()">プッシュ通知を解除する</button>
     </div>
-<!-- PWAでプッシュ通知を実装してみる（３）EN -->
+<!-- PWAでプッシュ通知を実装してみる３ EN -->
     
     <script>
     <!-- service workerの登録関係 -->
