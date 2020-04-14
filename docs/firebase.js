@@ -194,3 +194,5 @@ function ShowEntryButton() {
 function ShowRemoveButton() {
     $('#EntryButton').hide();
     $('#RemoveButton').show();
+}
+
