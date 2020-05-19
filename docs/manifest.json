@@ -1,0 +1,25 @@
+{
+    "name": "虹色ミツバチ-32877",
+    "short_name": "32877",
+    "description": "freoカスタマイズメモ、テンプレート・プラグイン配布/officeTIPS",
+    "start_url": "/?utm_source=homescreen&utm_medium=pwa",
+    "display": "standalone",
+    "lang": "ja",
+    "dir": "auto",
+    "orientation": "any",
+    "theme_color": "#bcb782",
+    "background_color": "#fffce0",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "type": "images",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icon-256.png",
+            "type": "images",
+            "sizes": "512x512"
+        }
+    ],
+    "gcm_sender_id": "103953800507"
+}
