@@ -68,7 +68,7 @@ function checkSubscription() {
                 $('#notification p.caution').text('購読を開始できませんでした。');
                 ShowEntryButton();
         });
-    }).catch(function (err) {
+    }).catch(function(err) {
         //プッシュ通知未対応
             console.log('通知の承認が得られませんでした。', err);
             $('#notification p.caution').text('プッシュ通知が許可されていません。ブラウザの設定を確認してください。');
@@ -117,7 +117,7 @@ function getSubscription() {
             $('#notification p.caution').text('購読を開始できませんでした。');
             ShowEntryButton();
         });
-  }).catch(function (err) {
+  }).catch(function(err) {
         console.log('通知の承認が得られませんでした。', err);
         $('#notification p.caution').text('プッシュ通知が許可されていません。ブラウザの設定を確認してください。');
         ShowEntryButton();
