@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#6a5f80"/>
     <meta name="apple-mobile-web-app-title" content="32877">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,6 +11,8 @@
     <link rel="apple-touch-icon-precomposed" href="/images/icon-192.png" sizes="192x192">
 　　<!-- vue.js　-->
 <!-- PWAでプッシュ通知を実装してみる２ ST -->
+<!-- serviceworker.jsをサイトに登録する -->
+<!-- Service Worker APIが利用可能かどうかを確認 -->
     <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -22,13 +24,6 @@
     }
     </script>
 <!-- PWAでプッシュ通知を実装してみる２ EN -->
-<!-- PWAでプッシュ通知を実装してみる３ ST -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-messaging.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <script defer src="firebase.js"></script>
-<!-- PWAでプッシュ通知を実装してみる３ EN -->
 
   <title>PWA Sample</title>
   </head>
@@ -37,15 +32,6 @@
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
-<!-- PWAでプッシュ通知を実装してみる３ ST -->
-    <div id="notification">
-        <h3>NOTIFICATION</h3>
-        <p>当サイトの更新をプッシュ通知で受け取ることができます。</p>
-        <p class="notice"></p>
-        <button id="EntryButton" onclick="getSubscription()">プッシュ通知を受け取る</button>
-        <button id="RemoveButton" onclick="removeSubscription()">プッシュ通知を解除する</button>
-    </div>
-<!-- PWAでプッシュ通知を実装してみる３ EN -->
     
     <script>
     <!-- service workerの登録関係 -->
