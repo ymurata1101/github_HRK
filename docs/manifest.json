@@ -1,5 +1,5 @@
 {
-    "name": "虹色ミツバチ-32877",
+    "name": "ヒロケイWebアプリ",
     "short_name": "32877",
     "description": "freoカスタマイズメモ、テンプレート・プラグイン配布/officeTIPS",
     "start_url": "/?utm_source=homescreen&utm_medium=pwa",
@@ -16,7 +16,7 @@
             "sizes": "192x192"
         },
         {
-            "src": "/icon-256.png",
+            "src": "/icon-512.png",
             "type": "images",
             "sizes": "512x512"
         }
