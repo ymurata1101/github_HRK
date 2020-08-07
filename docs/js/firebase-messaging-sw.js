@@ -9,7 +9,7 @@ const STATIC_FILES = [
     ORIGIN + '/',
     ORIGIN + '/github_HRK/images/icon-192.png',
     ORIGIN + '/github_HRK/images/icon-256.png',
-    ORIGIN + '/github_HRK/js/firebase-messaging-sw.js',
+    ORIGIN + '/github_HRK/js/firebase-messaging-sw.js'
 ];
 const CACHE_KEYS = [
     STATIC_CACHE_KEY
@@ -121,7 +121,7 @@ messaging.setBackgroundMessageHandler(function(payload) {
     var notificationTitle = payload.notification.title; // タイトル
     var notificationOptions = {
             body: payload.notification.body, // 本文
-            icon: payload.notification.icon, // アイコン
+            icon: payload.notification.icon // アイコン
     };
  
     return self.registration.showNotification(notificationTitle,
