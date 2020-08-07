@@ -7,9 +7,9 @@ const STATIC_CACHE_KEY = 'static-' + VERSION;
 // キャッシュ化するファイルを指定
 const STATIC_FILES = [
     ORIGIN + '/',
-    ORIGIN + '/images/icon-192.png',
-    ORIGIN + '/images/icon-256.png',
-    ORIGIN + '/js/firebase-messaging-sw.js',
+    ORIGIN + '/github_HRK/images/icon-192.png',
+    ORIGIN + '/github_HRK/images/icon-256.png',
+    ORIGIN + '/github_HRK/js/firebase-messaging-sw.js',
 ];
 const CACHE_KEYS = [
     STATIC_CACHE_KEY
