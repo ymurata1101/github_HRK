@@ -1,8 +1,10 @@
 // PWAでプッシュ通知を実装してみる（２）ST
+// VERSION:キャッシュ番号
 const VERSION = "1";
 const ORIGIN = location.protocol + '//' + location.hostname;
  
 const STATIC_CACHE_KEY = 'static-' + VERSION;
+// キャッシュ化するファイルを指定
 const STATIC_FILES = [
     ORIGIN + '/',
     ORIGIN + '/images/icon-192.png',
@@ -12,7 +14,8 @@ const STATIC_FILES = [
 const CACHE_KEYS = [
     STATIC_CACHE_KEY
 ];
- 
+
+// キャッシュの作成・利用・削除
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(STATIC_CACHE_KEY).then(cache => {
